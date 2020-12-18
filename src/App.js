@@ -44,14 +44,14 @@ const emojiHover = (emoji) => {
 
   return (
     <div className="App">
-      <h1>Food Emoticons</h1>
-      <div>
-        <input type="text" placeholder="Search your emoji here!" value={emoji} onChange={onChangeHandler}/>
-        <div>{meaning}</div>
-        <div>
+      <h1 className="heading">Food Emoticons</h1>
+      <div className="input-div">
+        <input className="input" type="text" placeholder="Search your emoji here!" value={emoji} onChange={onChangeHandler}/>
+        <div className="output">{meaning}</div>
+        <div className="emoji-div">
           {
              dicArr.map(item => {
-                return <div key={item} onClick={() => emojiHover(item)}> {item} </div>
+                return <div  className="emoji" key={item} onClick={() => emojiHover(item)}> {item} </div>
              })
           }
           </div>

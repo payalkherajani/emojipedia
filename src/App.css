@@ -1,0 +1,48 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #dbeafe;
+  --dark-gray: #60a5fa;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.heading {
+  margin: 1rem auto;
+  padding: 10px;
+}
+
+.input-div {
+  padding: 10px;
+  margin: 1rem auto;
+}
+
+.input {
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+.output {
+  font-size: x-large;
+  margin: 1rem auto;
+  padding: 10px;
+}
+
+.emoji-div {
+  padding: 10px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: x-large;
+}
